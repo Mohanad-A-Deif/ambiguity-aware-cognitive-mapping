@@ -1,0 +1,78 @@
+{
+  "profile": {
+    "master_seed": 20260718,
+    "days": 40,
+    "n_hospitals": 12,
+    "n_dcs": 2,
+    "n_suppliers": 2,
+    "resources": [
+      "VNT",
+      "ICU",
+      "PPE",
+      "AVD"
+    ],
+    "n_runs": 30,
+    "training_scenarios": 60,
+    "ppo_interactions": 300000,
+    "sensitivity_runs": 5,
+    "bootstrap_samples": 5000,
+    "output_formats": [
+      "png"
+    ],
+    "dpi": 600
+  },
+  "model": {
+    "backlog_mode": "backlog",
+    "reporting_noise": 0.1,
+    "reporting_missing_probability": 0.1,
+    "transfer_alpha": 1.0,
+    "physical_evidence_mix": 0.45,
+    "state_memory": 0.55,
+    "inner_max_iter": 60,
+    "convergence_tolerance": 0.0001,
+    "partial_truth_coefficient": 0.5,
+    "priority_temperature": 0.3,
+    "priority_objective_weight": 1.8,
+    "fairness_objective_weight": 0.16,
+    "lead_time_penalty": 0.08,
+    "operator_target_norm": 1.35,
+    "gaussian_mu": [
+      0.82,
+      0.18,
+      0.62,
+      0.38
+    ],
+    "gaussian_sigma": [
+      0.22,
+      0.22,
+      0.25,
+      0.25
+    ],
+    "gaussian_beta": [
+      1.0,
+      1.0,
+      0.82,
+      0.82
+    ],
+    "demand_scale": 1.0,
+    "lead_time_scale": 1.0,
+    "capacity_scale": 1.0
+  },
+  "selected_partial_truth_coefficient": 0.25,
+  "operator_norm_coupled": 1.3500000000000003,
+  "contraction_bound_coupled": 0.37125000000000014,
+  "figure_output_policy": "raster-only; no PDF",
+  "primary_metrics": [
+    "service_level",
+    "unmet_demand_rate",
+    "average_lead_time_days",
+    "gini_fill"
+  ],
+  "fairness_metrics": [
+    "gini_fill",
+    "jain_fairness",
+    "max_min_fairness",
+    "geographic_equity",
+    "priority_weighted_equity"
+  ]
+}
