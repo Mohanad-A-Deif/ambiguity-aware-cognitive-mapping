@@ -1,0 +1,4 @@
+split,first_month,last_month,month_resource_panels,calendar_months,observed_quantity,median_candidates,observed_recipients
+calibration,2020-04-01,2020-06-01,11,3,223267.0,1993.0,317
+test,2021-01-01,2021-07-01,18,7,122133.0,118.0,68
+validation,2020-07-01,2020-12-01,11,6,25465.0,344.0,44

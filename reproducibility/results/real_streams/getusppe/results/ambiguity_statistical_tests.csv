@@ -1,0 +1,113 @@
+ambiguity_stratum,metric,reference,comparator,mean_benefit_reference,ci_low,ci_high,wilcoxon_statistic,p_value,cohen_dz,n_paired_months,holm_p,significant_0_05
+Lower ambiguity,allocation_overlap,ACM-4 (coupled),ACM-4 (independent),0.0,0.0,0.0,0.0,1.0,,6,1.0,False
+Lower ambiguity,allocation_overlap,ACM-4 (coupled),ACM-3,0.0,0.0,0.0,0.0,1.0,,6,1.0,False
+Lower ambiguity,allocation_overlap,ACM-4 (coupled),ACM-2,0.0,0.0,0.0,0.0,1.0,,6,1.0,False
+Lower ambiguity,allocation_overlap,ACM-4 (coupled),FCM,0.0,0.0,0.0,0.0,1.0,,6,1.0,False
+Lower ambiguity,allocation_overlap,ACM-4 (coupled),Calibrated scalar,-0.05434782608695652,-0.16304347826086957,0.0,0.0,1.0,-0.408248290463863,6,1.0,False
+Lower ambiguity,allocation_overlap,ACM-4 (coupled),Demand proportional,0.0,0.0,0.0,0.0,1.0,,6,1.0,False
+Lower ambiguity,allocation_overlap,ACM-4 (coupled),Robust priority,0.0,0.0,0.0,0.0,1.0,,6,1.0,False
+Lower ambiguity,allocation_overlap,ACM-4 (coupled),Equal allocation,0.0,0.0,0.0,0.0,1.0,,6,1.0,False
+Lower ambiguity,priority_overlap,ACM-4 (coupled),ACM-4 (independent),-2.44798766696677e-06,-1.052446852713813e-05,9.341075213959433e-06,6.0,0.4375,-0.17636520782453458,6,1.0,False
+Lower ambiguity,priority_overlap,ACM-4 (coupled),ACM-3,-0.00020816288719328687,-0.00046245603302793394,-2.6603288624693053e-05,3.0,0.15625,-0.6645790333499655,6,1.0,False
+Lower ambiguity,priority_overlap,ACM-4 (coupled),ACM-2,-0.00016641685186580312,-0.00040136189498163696,-2.343279983074397e-06,3.0,0.15625,-0.5775356507676476,6,1.0,False
+Lower ambiguity,priority_overlap,ACM-4 (coupled),FCM,-0.00514115069125749,-0.010730816855854579,0.0008075858118441736,4.0,0.21875,-0.6479694466714154,6,1.0,False
+Lower ambiguity,priority_overlap,ACM-4 (coupled),Calibrated scalar,-0.02731510751030285,-0.13589798908939754,0.033883171107809876,6.0,0.4375,-0.2093836151246332,6,1.0,False
+Lower ambiguity,priority_overlap,ACM-4 (coupled),Demand proportional,0.004461973331266794,-0.004157693794675263,0.014222873185878655,8.0,0.6875,0.3471921334541989,6,1.0,False
+Lower ambiguity,priority_overlap,ACM-4 (coupled),Robust priority,0.001857670038495074,-0.011857316403346805,0.014243791017559196,10.0,1.0,0.10031387863492934,6,1.0,False
+Lower ambiguity,priority_overlap,ACM-4 (coupled),Equal allocation,-0.008714634095928703,-0.017272691469968373,0.00020476031308394536,4.0,0.21875,-0.7236742221146739,6,1.0,False
+Lower ambiguity,js_distance,ACM-4 (coupled),ACM-4 (independent),0.0,0.0,0.0,0.0,1.0,,6,1.0,False
+Lower ambiguity,js_distance,ACM-4 (coupled),ACM-3,0.0,0.0,0.0,0.0,1.0,,6,1.0,False
+Lower ambiguity,js_distance,ACM-4 (coupled),ACM-2,0.0,0.0,0.0,0.0,1.0,,6,1.0,False
+Lower ambiguity,js_distance,ACM-4 (coupled),FCM,0.0,0.0,0.0,0.0,1.0,,6,1.0,False
+Lower ambiguity,js_distance,ACM-4 (coupled),Calibrated scalar,-0.04586146586495471,-0.13758439759486413,0.0,0.0,1.0,-0.408248290463863,6,1.0,False
+Lower ambiguity,js_distance,ACM-4 (coupled),Demand proportional,-1.850371707708594e-17,-5.551115123125783e-17,0.0,0.0,1.0,-0.408248290463863,6,1.0,False
+Lower ambiguity,js_distance,ACM-4 (coupled),Robust priority,0.0,0.0,0.0,0.0,1.0,,6,1.0,False
+Lower ambiguity,js_distance,ACM-4 (coupled),Equal allocation,-1.850371707708594e-17,-5.551115123125783e-17,0.0,0.0,1.0,-0.408248290463863,6,1.0,False
+Lower ambiguity,priority_js_distance,ACM-4 (coupled),ACM-4 (independent),-6.714723345004521e-06,-1.3031682958695537e-05,3.903757606874929e-06,6.0,0.4375,-0.5306075422689335,6,1.0,False
+Lower ambiguity,priority_js_distance,ACM-4 (coupled),ACM-3,-0.0002901619222448563,-0.0005454837275835992,-0.00010394735193871203,0.0,0.03125,-0.9016186025207775,6,0.25,False
+Lower ambiguity,priority_js_distance,ACM-4 (coupled),ACM-2,-0.0002529115494277108,-0.0004937746297029774,-6.814573483449975e-05,0.0,0.03125,-0.8480493494790303,6,0.25,False
+Lower ambiguity,priority_js_distance,ACM-4 (coupled),FCM,-0.007811690098910233,-0.014409607896379573,-0.0010920368075834352,2.0,0.09375,-0.8866821128591502,6,0.5625,False
+Lower ambiguity,priority_js_distance,ACM-4 (coupled),Calibrated scalar,-0.0033494499773590682,-0.08676789576750778,0.04562130945351015,6.0,0.4375,-0.033504463500733224,6,1.0,False
+Lower ambiguity,priority_js_distance,ACM-4 (coupled),Demand proportional,0.005343927046655483,-0.004523362576594654,0.01786272743153607,9.0,0.84375,0.3430844476130723,6,1.0,False
+Lower ambiguity,priority_js_distance,ACM-4 (coupled),Robust priority,0.011151470988011244,-0.000931486616005848,0.022058708593701747,4.0,0.21875,0.7118834072353011,6,0.875,False
+Lower ambiguity,priority_js_distance,ACM-4 (coupled),Equal allocation,-0.012076135641303562,-0.021833875322979923,-0.0024559896122183047,2.0,0.09375,-0.9235944519992979,6,0.5625,False
+Lower ambiguity,ndcg_all,ACM-4 (coupled),ACM-4 (independent),0.0,0.0,0.0,0.0,1.0,,6,1.0,False
+Lower ambiguity,ndcg_all,ACM-4 (coupled),ACM-3,-0.0007607110669286566,-0.0025817705825616232,0.0005778088064115639,4.0,0.4375,-0.3436363400067368,6,1.0,False
+Lower ambiguity,ndcg_all,ACM-4 (coupled),ACM-2,-0.0006973045544324564,-0.002458095492450574,0.0006699899980561254,4.0,0.4375,-0.3251894861598993,6,1.0,False
+Lower ambiguity,ndcg_all,ACM-4 (coupled),FCM,-0.004567169005862737,-0.010975907371678738,0.00020895562412346727,5.0,0.3125,-0.5771572043420792,6,1.0,False
+Lower ambiguity,ndcg_all,ACM-4 (coupled),Calibrated scalar,-0.1662887509159627,-0.3182359897150125,-0.03342400063056652,2.0,0.09375,-0.8063851611979728,6,0.75,False
+Lower ambiguity,ndcg_all,ACM-4 (coupled),Demand proportional,-0.04008906133763925,-0.08498497372967728,0.02688917416052995,6.0,0.4375,-0.5047705257036165,6,1.0,False
+Lower ambiguity,ndcg_all,ACM-4 (coupled),Robust priority,0.007687471315723659,-0.010492367833776,0.0262672941643967,7.0,0.5625,0.30955526723488574,6,1.0,False
+Lower ambiguity,ndcg_all,ACM-4 (coupled),Equal allocation,-0.07990401738693778,-0.1387877762336314,-0.016875394095209464,2.0,0.09375,-0.9649265502918183,6,0.75,False
+Lower ambiguity,recipient_average_precision,ACM-4 (coupled),ACM-4 (independent),0.0,0.0,0.0,0.0,1.0,,6,1.0,False
+Lower ambiguity,recipient_average_precision,ACM-4 (coupled),ACM-3,-3.291341530438898e-05,-0.0013694716361070086,0.0013776295859165941,7.0,1.0,-0.018547300943192038,6,1.0,False
+Lower ambiguity,recipient_average_precision,ACM-4 (coupled),ACM-2,1.556745422714205e-05,-0.001293968106203436,0.0014373300514766718,7.0,1.0,0.008786630934311012,6,1.0,False
+Lower ambiguity,recipient_average_precision,ACM-4 (coupled),FCM,-0.003016969032910176,-0.007804943014740589,0.0003556046495027997,7.0,0.5625,-0.5125799409546388,6,1.0,False
+Lower ambiguity,recipient_average_precision,ACM-4 (coupled),Calibrated scalar,-0.07691722013921849,-0.20546115213637037,0.06866981328716282,5.0,0.3125,-0.41761716975789814,6,1.0,False
+Lower ambiguity,recipient_average_precision,ACM-4 (coupled),Demand proportional,0.013023754085532321,-0.04329591496707016,0.10380287427161232,6.0,0.4375,0.12013206057423889,6,1.0,False
+Lower ambiguity,recipient_average_precision,ACM-4 (coupled),Robust priority,0.01484919344173169,-0.006463824320805705,0.045050767341462856,6.0,0.4375,0.4047973180108748,6,1.0,False
+Lower ambiguity,recipient_average_precision,ACM-4 (coupled),Equal allocation,0.03396094713080202,-0.01222900247564135,0.11612780221113606,9.0,0.84375,0.3407004480065878,6,1.0,False
+Lower ambiguity,recipient_recall_at_observed_k,ACM-4 (coupled),ACM-4 (independent),0.0,0.0,0.0,0.0,1.0,,6,1.0,False
+Lower ambiguity,recipient_recall_at_observed_k,ACM-4 (coupled),ACM-3,0.0,0.0,0.0,0.0,1.0,,6,1.0,False
+Lower ambiguity,recipient_recall_at_observed_k,ACM-4 (coupled),ACM-2,0.0,0.0,0.0,0.0,1.0,,6,1.0,False
+Lower ambiguity,recipient_recall_at_observed_k,ACM-4 (coupled),FCM,0.0,0.0,0.0,0.0,1.0,,6,1.0,False
+Lower ambiguity,recipient_recall_at_observed_k,ACM-4 (coupled),Calibrated scalar,-0.05694444444444444,-0.21944444444444444,0.18333333333333335,5.0,0.625,-0.1985086973572621,6,1.0,False
+Lower ambiguity,recipient_recall_at_observed_k,ACM-4 (coupled),Demand proportional,0.08333333333333333,0.0,0.25,0.0,1.0,0.408248290463863,6,1.0,False
+Lower ambiguity,recipient_recall_at_observed_k,ACM-4 (coupled),Robust priority,0.08333333333333333,0.0,0.25,0.0,1.0,0.408248290463863,6,1.0,False
+Lower ambiguity,recipient_recall_at_observed_k,ACM-4 (coupled),Equal allocation,0.012499999999999992,-0.14583333333333334,0.21666666666666667,3.0,1.0,0.04795735609559654,6,1.0,False
+Higher ambiguity,allocation_overlap,ACM-4 (coupled),ACM-4 (independent),0.0,0.0,0.0,0.0,1.0,,5,1.0,False
+Higher ambiguity,allocation_overlap,ACM-4 (coupled),ACM-3,0.0,0.0,0.0,0.0,1.0,,5,1.0,False
+Higher ambiguity,allocation_overlap,ACM-4 (coupled),ACM-2,0.0,0.0,0.0,0.0,1.0,,5,1.0,False
+Higher ambiguity,allocation_overlap,ACM-4 (coupled),FCM,0.01,0.0,0.030000000000000006,0.0,1.0,0.4472135954999579,5,1.0,False
+Higher ambiguity,allocation_overlap,ACM-4 (coupled),Calibrated scalar,-0.15151137180076085,-0.3512007820689492,0.02,1.0,0.5,-0.640652099000665,5,1.0,False
+Higher ambiguity,allocation_overlap,ACM-4 (coupled),Demand proportional,-0.07698161431280402,-0.2609448429384121,0.030000000000000006,1.0,1.0,-0.38250796959175204,5,1.0,False
+Higher ambiguity,allocation_overlap,ACM-4 (coupled),Robust priority,0.0,0.0,0.0,0.0,1.0,,5,1.0,False
+Higher ambiguity,allocation_overlap,ACM-4 (coupled),Equal allocation,-0.07698161431280402,-0.2609448429384121,0.030000000000000006,1.0,1.0,-0.38250796959175204,5,1.0,False
+Higher ambiguity,priority_overlap,ACM-4 (coupled),ACM-4 (independent),2.1659835702288014e-06,-1.642469634135016e-06,5.974436774592619e-06,3.0,0.3125,0.42788940957974786,5,1.0,False
+Higher ambiguity,priority_overlap,ACM-4 (coupled),ACM-3,-0.0001366031284679709,-0.00033174577601368505,6.411579257710707e-05,4.0,0.4375,-0.5552319000059384,5,1.0,False
+Higher ambiguity,priority_overlap,ACM-4 (coupled),ACM-2,8.185249610704465e-07,-0.00016107123281466248,0.0001481790490781544,7.0,1.0,0.003973437273772867,5,1.0,False
+Higher ambiguity,priority_overlap,ACM-4 (coupled),FCM,0.002113407863920093,-0.0009680239898938595,0.004573315402882572,3.0,0.3125,0.5869567097245412,5,1.0,False
+Higher ambiguity,priority_overlap,ACM-4 (coupled),Calibrated scalar,-0.01683918376752419,-0.08115832568717338,0.02262813156405712,6.0,0.8125,-0.24228216399076502,5,1.0,False
+Higher ambiguity,priority_overlap,ACM-4 (coupled),Demand proportional,-0.06381490483910857,-0.11777460177030467,-0.01982367421235394,1.0,0.125,-1.0110209193556492,5,1.0,False
+Higher ambiguity,priority_overlap,ACM-4 (coupled),Robust priority,0.006389061725000496,-0.008904063422342604,0.026018636247602665,7.0,1.0,0.27325825344604054,5,1.0,False
+Higher ambiguity,priority_overlap,ACM-4 (coupled),Equal allocation,0.002866150265403187,-0.001485886028927553,0.006282886039955887,4.0,0.4375,0.5761694102099517,5,1.0,False
+Higher ambiguity,js_distance,ACM-4 (coupled),ACM-4 (independent),0.0,0.0,0.0,0.0,1.0,,5,1.0,False
+Higher ambiguity,js_distance,ACM-4 (coupled),ACM-3,0.0,0.0,0.0,0.0,1.0,,5,1.0,False
+Higher ambiguity,js_distance,ACM-4 (coupled),ACM-2,0.0,0.0,0.0,0.0,1.0,,5,1.0,False
+Higher ambiguity,js_distance,ACM-4 (coupled),FCM,0.013071352818246017,0.0,0.03808538730039549,0.0,0.5,0.4722642442720822,5,1.0,False
+Higher ambiguity,js_distance,ACM-4 (coupled),Calibrated scalar,-0.1067944661671992,-0.2615921025223723,0.025014034482149495,3.0,0.625,-0.5892200382414164,5,1.0,False
+Higher ambiguity,js_distance,ACM-4 (coupled),Demand proportional,-0.06137513344145534,-0.22164645204759026,0.03752105172322421,3.0,1.0,-0.35209681972786333,5,1.0,False
+Higher ambiguity,js_distance,ACM-4 (coupled),Robust priority,1.1102230246251566e-17,0.0,3.3306690738754695e-17,0.0,1.0,0.4472135954999579,5,1.0,False
+Higher ambiguity,js_distance,ACM-4 (coupled),Equal allocation,-0.06137513344145534,-0.22164645204759026,0.03752105172322421,3.0,1.0,-0.35209681972786333,5,1.0,False
+Higher ambiguity,priority_js_distance,ACM-4 (coupled),ACM-4 (independent),-1.8005496344009054e-06,-9.747997292364197e-06,5.176261373540658e-06,6.0,0.8125,-0.1905560443264515,5,1.0,False
+Higher ambiguity,priority_js_distance,ACM-4 (coupled),ACM-3,-0.00017528879455392944,-0.00034965230935410927,8.32976983015321e-05,3.0,0.3125,-0.6130861252624016,5,1.0,False
+Higher ambiguity,priority_js_distance,ACM-4 (coupled),ACM-2,-3.8330260380758927e-05,-0.00020307466159241727,0.00015110174982458925,6.0,0.8125,-0.1750174651403878,5,1.0,False
+Higher ambiguity,priority_js_distance,ACM-4 (coupled),FCM,0.0004085198589959149,-0.004535843738710332,0.003444365011793926,5.0,0.625,0.07395103004046032,5,1.0,False
+Higher ambiguity,priority_js_distance,ACM-4 (coupled),Calibrated scalar,-0.006346699481347673,-0.07214080495121669,0.035364702908096714,5.0,0.625,-0.08653016467409663,5,1.0,False
+Higher ambiguity,priority_js_distance,ACM-4 (coupled),Demand proportional,-0.05800462482639564,-0.10945631381647214,-0.012230821786265911,1.0,0.125,-0.9814359631440958,5,1.0,False
+Higher ambiguity,priority_js_distance,ACM-4 (coupled),Robust priority,0.015324121874411945,0.0004005914624214624,0.03650859651360434,2.0,0.1875,0.6572392614668886,5,1.0,False
+Higher ambiguity,priority_js_distance,ACM-4 (coupled),Equal allocation,0.0009114884056347971,-0.006141690128255139,0.005438174571524956,5.0,0.625,0.11457448838542218,5,1.0,False
+Higher ambiguity,ndcg_all,ACM-4 (coupled),ACM-4 (independent),0.00013510529099033665,0.0,0.0004053158729710099,0.0,1.0,0.4472135954999579,5,1.0,False
+Higher ambiguity,ndcg_all,ACM-4 (coupled),ACM-3,-0.00035230601216466596,-0.0038157396945823403,0.003910391242809358,5.0,0.625,-0.07360922118271371,5,1.0,False
+Higher ambiguity,ndcg_all,ACM-4 (coupled),ACM-2,-9.081835195694499e-05,-0.00360949547340135,0.003980916171753052,7.0,1.0,-0.018825957730501056,5,1.0,False
+Higher ambiguity,ndcg_all,ACM-4 (coupled),FCM,-0.005298000605870481,-0.018954695890618455,0.0025223254421160636,5.0,0.625,-0.35365144124508235,5,1.0,False
+Higher ambiguity,ndcg_all,ACM-4 (coupled),Calibrated scalar,-0.10449695976228017,-0.26023993153878544,-0.0033287469617351044,2.0,0.1875,-0.604749633147816,5,1.0,False
+Higher ambiguity,ndcg_all,ACM-4 (coupled),Demand proportional,-0.18784997751041882,-0.3362084571901604,-0.05876813465203967,1.0,0.125,-1.0813682775113358,5,1.0,False
+Higher ambiguity,ndcg_all,ACM-4 (coupled),Robust priority,0.017249627909907854,-0.00018322381345412252,0.04280919087941085,2.0,0.1875,0.6049093342799232,5,1.0,False
+Higher ambiguity,ndcg_all,ACM-4 (coupled),Equal allocation,0.014855585066679406,-0.0337269807007511,0.04842983356848285,5.0,0.625,0.281855643918047,5,1.0,False
+Higher ambiguity,recipient_average_precision,ACM-4 (coupled),ACM-4 (independent),7.112375533428194e-05,0.0,0.00021337126600284585,0.0,1.0,0.4472135954999579,5,1.0,False
+Higher ambiguity,recipient_average_precision,ACM-4 (coupled),ACM-3,-0.0005257745680971192,-0.0032058094333464134,0.002364932369628037,4.0,0.4375,-0.1555895981409394,5,1.0,False
+Higher ambiguity,recipient_average_precision,ACM-4 (coupled),ACM-2,-0.00011310167870054593,-0.002866273190834776,0.0026808291057968457,7.0,1.0,-0.033286597163703614,5,1.0,False
+Higher ambiguity,recipient_average_precision,ACM-4 (coupled),FCM,-0.027200779769633927,-0.08161537777306413,0.0011646467072713913,5.0,0.625,-0.4495174492047317,5,1.0,False
+Higher ambiguity,recipient_average_precision,ACM-4 (coupled),Calibrated scalar,-0.09493636047151441,-0.2559269802439616,0.03229781618014384,5.0,0.625,-0.4843543019702838,5,1.0,False
+Higher ambiguity,recipient_average_precision,ACM-4 (coupled),Demand proportional,-0.09047962372250037,-0.16147525516591638,-0.01948399227908435,2.0,0.1875,-0.9956456765633238,5,1.0,False
+Higher ambiguity,recipient_average_precision,ACM-4 (coupled),Robust priority,-0.008840397271503367,-0.06076935131511017,0.023459256856187365,5.0,0.625,-0.1528039612494956,5,1.0,False
+Higher ambiguity,recipient_average_precision,ACM-4 (coupled),Equal allocation,0.05866571772960505,0.028382709559092195,0.09955260086676262,0.0,0.0625,1.2149120633642374,5,0.5,False
+Higher ambiguity,recipient_recall_at_observed_k,ACM-4 (coupled),ACM-4 (independent),0.0,0.0,0.0,0.0,1.0,,5,1.0,False
+Higher ambiguity,recipient_recall_at_observed_k,ACM-4 (coupled),ACM-3,0.0,0.0,0.0,0.0,1.0,,5,1.0,False
+Higher ambiguity,recipient_recall_at_observed_k,ACM-4 (coupled),ACM-2,0.0,0.0,0.0,0.0,1.0,,5,1.0,False
+Higher ambiguity,recipient_recall_at_observed_k,ACM-4 (coupled),FCM,0.0,0.0,0.0,0.0,1.0,,5,1.0,False
+Higher ambiguity,recipient_recall_at_observed_k,ACM-4 (coupled),Calibrated scalar,-0.07727272727272727,-0.2818181818181818,0.11666666666666667,2.0,0.75,-0.2915237784129566,5,1.0,False
+Higher ambiguity,recipient_recall_at_observed_k,ACM-4 (coupled),Demand proportional,-0.08414141414141414,-0.25353535353535356,0.10555555555555556,3.0,0.625,-0.36905059225728754,5,1.0,False
+Higher ambiguity,recipient_recall_at_observed_k,ACM-4 (coupled),Robust priority,-0.02,-0.06000000000000001,0.0,0.0,1.0,-0.4472135954999579,5,1.0,False
+Higher ambiguity,recipient_recall_at_observed_k,ACM-4 (coupled),Equal allocation,0.04090909090909091,-0.02727272727272727,0.15,1.0,1.0,0.3451342449813167,5,1.0,False

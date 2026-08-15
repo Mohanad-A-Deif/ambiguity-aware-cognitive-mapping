@@ -1,0 +1,18 @@
+{
+  "source": "ppe-match 0.1.4 public package",
+  "homepage": "https://pypi.org/project/ppe-match/",
+  "framework_repository": "https://github.com/samorani/MatchingPPE",
+  "products": [
+    "respirators",
+    "surgicalMasks",
+    "faceShields",
+    "gowns"
+  ],
+  "decision_interval_days": 7,
+  "maximum_donation_quantity": 1000,
+  "source_file_sha256": {
+    "anon_donors.csv": "6b277d4df5f04db4689a4f7bc0c386446d949ffdab2d592a0cfee55e8d88751a",
+    "anon_recipients.csv": "18e34c7f6c4b2b6f273d9d1d8b8376ff3228869ed4a6f61420701c5032b8c1f2",
+    "anon_distance_matrix.csv": "d7dab7aab20f54575bcb87f8ebb04ed04acd4b003e046a773fc8c61aefcb1d3d"
+  }
+}

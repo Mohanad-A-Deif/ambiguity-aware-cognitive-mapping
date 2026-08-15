@@ -1,0 +1,11 @@
+{
+  "dataset_repository": "https://github.com/GetUsPPE/ppe_needs_retrospective",
+  "dataset_article": "https://doi.org/10.1002/puh2.65",
+  "optimization": "Optuna TPE; calibration objective, validation selection",
+  "lp_parameters": "fixed manuscript coefficients",
+  "source_file_sha256": {
+    "all_requests.csv": "bc270e7f561e0da36aa47cc6a29adfd7f8766b16b6bc8066c97f184328bad64c",
+    "all_offers.csv": "b1a576d46e44465554dff422f94eb9159cff6ffbdd5469a018a8a37f72160898",
+    "all_matches.csv": "eaacac794180177c6e1209b9be5164b88546bbd3c1783ff8ba6c7d76052c9643"
+  }
+}

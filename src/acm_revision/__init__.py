@@ -1,4 +1,3 @@
-"""Reproducible ACM revision experiments for epidemic supply chains."""
+"""Reproducible ACM experiments for epidemic medical-resource allocation."""
 
-__version__ = "1.0.0"
-
+__version__ = "1.1.0"

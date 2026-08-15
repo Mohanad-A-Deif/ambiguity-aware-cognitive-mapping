@@ -1,0 +1,37 @@
+metric,reference,comparator,mean_benefit_reference,wilcoxon_statistic,p_value,n_paired_panels,holm_p,significant_0_05
+operational_score,ACM-4 (coupled),ACM-4 (independent),0.0,0.0,1.0,11,1.0,False
+operational_score,ACM-4 (coupled),ACM-3,-2.5910884733357483e-05,6.0,0.21875,11,0.69921875,False
+operational_score,ACM-4 (coupled),ACM-2,-7.83628011169995e-07,13.0,0.546875,11,1.0,False
+operational_score,ACM-4 (coupled),Proximity,0.017610652630188406,17.0,0.1748046875,11,0.69921875,False
+operational_score,ACM-4 (coupled),Demand proportional,0.0392829310987771,0.0,0.0009765625,11,0.005859375,True
+operational_score,ACM-4 (coupled),Equal allocation,-0.00408860507841153,0.0,0.0009765625,11,0.005859375,True
+service_level,ACM-4 (coupled),ACM-4 (independent),0.0,0.0,1.0,11,1.0,False
+service_level,ACM-4 (coupled),ACM-3,0.0,0.0,1.0,11,1.0,False
+service_level,ACM-4 (coupled),ACM-2,0.0,0.0,1.0,11,1.0,False
+service_level,ACM-4 (coupled),Proximity,0.00034408678744084247,0.0,0.0009765625,11,0.005859375,True
+service_level,ACM-4 (coupled),Demand proportional,0.0,0.0,1.0,11,1.0,False
+service_level,ACM-4 (coupled),Equal allocation,0.0,0.0,1.0,11,1.0,False
+recipient_coverage,ACM-4 (coupled),ACM-4 (independent),0.0,0.0,1.0,11,1.0,False
+recipient_coverage,ACM-4 (coupled),ACM-3,-0.00010541418187676588,0.0,0.125,11,0.375,False
+recipient_coverage,ACM-4 (coupled),ACM-2,-3.0025684834584686e-05,10.0,0.3125,11,0.625,False
+recipient_coverage,ACM-4 (coupled),Proximity,-0.0648314815397897,0.0,0.0009765625,11,0.005859375,True
+recipient_coverage,ACM-4 (coupled),Demand proportional,0.013931998369176378,0.0,0.0009765625,11,0.005859375,True
+recipient_coverage,ACM-4 (coupled),Equal allocation,-0.014024260935343048,0.0,0.0009765625,11,0.005859375,True
+fill_gini,ACM-4 (coupled),ACM-4 (independent),0.0,0.0,1.0,11,1.0,False
+fill_gini,ACM-4 (coupled),ACM-3,2.213303679181196e-06,0.0,0.015625,11,0.03125,True
+fill_gini,ACM-4 (coupled),ACM-2,3.3613965987373945e-05,0.0,0.0078125,11,0.0234375,True
+fill_gini,ACM-4 (coupled),Proximity,-0.055080076743833424,0.0,0.0009765625,11,0.005859375,True
+fill_gini,ACM-4 (coupled),Demand proportional,0.0051466861428418305,0.0,0.0009765625,11,0.005859375,True
+fill_gini,ACM-4 (coupled),Equal allocation,-0.0034527010564596827,0.0,0.0009765625,11,0.005859375,True
+unit_miles,ACM-4 (coupled),ACM-4 (independent),0.0,0.0,1.0,11,1.0,False
+unit_miles,ACM-4 (coupled),ACM-3,0.0,0.0,1.0,11,1.0,False
+unit_miles,ACM-4 (coupled),ACM-2,0.0,0.0,1.0,11,1.0,False
+unit_miles,ACM-4 (coupled),Proximity,-11.613181867929766,32.0,0.9658203125,11,1.0,False
+unit_miles,ACM-4 (coupled),Demand proportional,1043.117828337439,0.0,0.0009765625,11,0.005859375,True
+unit_miles,ACM-4 (coupled),Equal allocation,3.2400110014850143,10.0,0.578125,11,1.0,False
+holding_days,ACM-4 (coupled),ACM-4 (independent),0.0,0.0,1.0,11,1.0,False
+holding_days,ACM-4 (coupled),ACM-3,0.0,0.0,1.0,11,1.0,False
+holding_days,ACM-4 (coupled),ACM-2,0.0,0.0,1.0,11,1.0,False
+holding_days,ACM-4 (coupled),Proximity,27.060728430337523,0.0,0.0009765625,11,0.005859375,True
+holding_days,ACM-4 (coupled),Demand proportional,0.0,0.0,1.0,11,1.0,False
+holding_days,ACM-4 (coupled),Equal allocation,0.0,0.0,1.0,11,1.0,False

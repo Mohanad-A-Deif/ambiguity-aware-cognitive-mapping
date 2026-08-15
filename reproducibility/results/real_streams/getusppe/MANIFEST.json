@@ -1,0 +1,97 @@
+[
+  {
+    "path": "figures/fig_real10_getusppe_v2_validation.png",
+    "bytes": 760153,
+    "sha256": "70a4da45be21358929b8eb2c1a10e1036d551c8ec46c2ff85bb064c45bd1872f"
+  },
+  {
+    "path": "figures/fig_real11_getusppe_v2_calibration.png",
+    "bytes": 530303,
+    "sha256": "af3c6c1ce8a74ebc74f97eb373ea14d0c97c3057607e3aaae96f6f38bddd6956"
+  },
+  {
+    "path": "manuscript_results_draft.tex",
+    "bytes": 2104,
+    "sha256": "e5366320d730016aa7c30555bf32cb0a704aa30b20b5326f0ca072ea95899f0e"
+  },
+  {
+    "path": "results/ambiguity_statistical_tests.csv",
+    "bytes": 17007,
+    "sha256": "db22d7b4755c04071379d93dba85d0d5f6681fc303dc7c1180ae2c306382ae81"
+  },
+  {
+    "path": "results/ambiguity_summary.csv",
+    "bytes": 6516,
+    "sha256": "903332c7cf32a862f4ee87145b275f8f965bd15c588c5176a4dc26b352a8b080"
+  },
+  {
+    "path": "results/convergence_diagnostics.csv",
+    "bytes": 252772,
+    "sha256": "84c727b4e6d3594985625ec77fc7b800acdc264494c8ddd663341f12fc0a1a91"
+  },
+  {
+    "path": "results/coupled_acm_test_allocations.csv",
+    "bytes": 1429817,
+    "sha256": "51ff22828ffbe22b79069b3fdd213f917c77a591ad880e5e170eacf35aa594be"
+  },
+  {
+    "path": "results/data_audit.csv",
+    "bytes": 1293,
+    "sha256": "123c48d6eee95ec2542ecf2f887ea7d24ec8f59dbe3cfe8f2887c8d10b96bfac"
+  },
+  {
+    "path": "results/data_provenance.json",
+    "bytes": 569,
+    "sha256": "d4442dfb56848d25510d7aa474cc082341b34453eba7e4bd009b6345d67b6f0a"
+  },
+  {
+    "path": "results/graph_diagnostics.csv",
+    "bytes": 2188,
+    "sha256": "8436116279ad15621fa1eff62c292eef25e2ebcba67275c7b350282a9774de8b"
+  },
+  {
+    "path": "results/monthly_model_metrics.csv",
+    "bytes": 68932,
+    "sha256": "3c51add474649d191d38c678a687dee74c205f2ce2b7132394be2d0d86e46156"
+  },
+  {
+    "path": "results/optimizer_preset_comparison.csv",
+    "bytes": 836,
+    "sha256": "397705d44317c3b76a634771f4e5292166d13286f5af2ac67bff6b7f889465e9"
+  },
+  {
+    "path": "results/optuna_trials.csv",
+    "bytes": 14973,
+    "sha256": "e4a1d1bf4eaa7057b6d18f9d1ccf16514d45285d4101d6f8adef34be846388fe"
+  },
+  {
+    "path": "results/paired_statistical_tests.csv",
+    "bytes": 8042,
+    "sha256": "cb7bb8de4d599cf4f3dd5167fb131802d5c1cb6967662fb836e9edf626792f78"
+  },
+  {
+    "path": "results/scalar_calibration.csv",
+    "bytes": 348,
+    "sha256": "d8f98477665f4af3178b83dc61f242844d6543f6233a0e7bf500c9dcd2822aec"
+  },
+  {
+    "path": "results/scalar_coefficients.csv",
+    "bytes": 391,
+    "sha256": "e8a4b641bfd5e930e5f85ea8312723272c27de872b929c3abf06972ab17b7bd3"
+  },
+  {
+    "path": "results/selected_parameters.json",
+    "bytes": 880,
+    "sha256": "a5db919edd62b026cf6f85168aecc9de4987a5eab5324cf0ab6897f71e713481"
+  },
+  {
+    "path": "results/split_description.csv",
+    "bytes": 287,
+    "sha256": "db532557e4b1769fa7224888eb541add9754fb4a38f0bb5c94b5c4b8b6612b6f"
+  },
+  {
+    "path": "results/test_summary.csv",
+    "bytes": 7707,
+    "sha256": "fa358d21e5330567b2c51e7fc3e6d0bc30648d5a1f351c55d87b96f075bcf8a3"
+  }
+]

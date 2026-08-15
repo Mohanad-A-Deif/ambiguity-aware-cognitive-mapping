@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "master_seed": 20260718,
+  "bootstrap_samples": 5000,
+  "figure_dpi": 600,
+  "operator_target_norm": 1.35,
+  "fixed_lp_coefficients": {
+    "priority": 1.8,
+    "demand": 0.2,
+    "fairness": 0.16,
+    "lead_time": 0.08
+  },
+  "shared_search_space": {
+    "mu_true": [0.76, 0.88],
+    "mu_partial": [0.56, 0.68],
+    "sigma_exact": [0.18, 0.28],
+    "sigma_partial": [0.2, 0.3],
+    "beta_partial": [0.7, 0.95],
+    "diagonal_memory": [0.34, 0.5],
+    "partial_to_exact": [0.12, 0.36],
+    "exact_to_partial": [0.06, 0.18],
+    "partial_self": [0.8, 0.94],
+    "physical_mix": [0.4, 0.55],
+    "partial_coefficient": [0.25, 0.5, 0.75, 1.0]
+  },
+  "getusppe": {
+    "source_files": ["all_requests.csv", "all_offers.csv", "all_matches.csv"],
+    "lookback_days": 90,
+    "temporal_split": {
+      "calibration": ["2020-04", "2020-06"],
+      "validation": ["2020-07", "2020-12"],
+      "test": ["2021-01", "2021-07"]
+    },
+    "optimizer": {
+      "sampler": "Optuna TPESampler",
+      "trials": 36,
+      "startup_trials": 12,
+      "validation_shortlist": 8,
+      "direction": "maximize",
+      "regularization_weight": 0.0025
+    },
+    "calibration_objective_weights": {
+      "allocation_overlap": 0.55,
+      "priority_overlap": 0.2,
+      "recipient_average_precision": 0.15,
+      "recipient_recall_at_observed_k": 0.1
+    },
+    "search_space": {
+      "temperature": [0.2, 0.4],
+      "evidence_source_weights_log_uniform": [0.5, 2.0]
+    },
+    "frozen_results": "reproducibility/results/real_streams/getusppe"
+  },
+  "ppe_match": {
+    "source_version": "ppe-match 0.1.4",
+    "source_files": ["anon_donors.csv", "anon_recipients.csv", "anon_distance_matrix.csv"],
+    "products": ["respirators", "surgicalMasks", "faceShields", "gowns"],
+    "decision_interval_days": 7,
+    "maximum_donation_quantity": 1000,
+    "temporal_split_by_ordered_decision_dates": [0.6, 0.2, 0.2],
+    "optimizer": {
+      "sampler": "Optuna TPESampler",
+      "trials": 28,
+      "startup_trials": 10,
+      "validation_shortlist": 7,
+      "direction": "maximize",
+      "regularization_weight": 0.001
+    },
+    "operational_score_weights": {
+      "service_level": 0.35,
+      "recipient_coverage": 0.25,
+      "one_minus_fill_gini": 0.2,
+      "normalized_transport_efficiency": 0.1,
+      "normalized_holding_efficiency": 0.1
+    },
+    "search_space": {
+      "temperature_log_uniform": [0.2, 1.5],
+      "demand_weight_log_uniform": [0.25, 4.0],
+      "backlog_weight_log_uniform": [0.25, 4.0],
+      "inventory_weight_log_uniform": [0.25, 4.0],
+      "route_weight_log_uniform": [0.05, 2.0],
+      "capacity_weight_log_uniform": [0.25, 4.0]
+    },
+    "frozen_results": "reproducibility/results/real_streams/ppe_match"
+  }
+}
