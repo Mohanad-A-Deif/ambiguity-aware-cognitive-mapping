@@ -27,7 +27,7 @@ from acm_revision.validation import validate_outputs
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Generate all revised ACM manuscript experiments, tables and raster figures.")
+    parser = argparse.ArgumentParser(description="Generate the ACM experiments, tables, and raster figures.")
     parser.add_argument("--profile", choices=["quick", "paper"], default="paper")
     parser.add_argument("--config", type=Path, default=ROOT / "config" / "default.json")
     parser.add_argument("--output", type=Path, default=None)

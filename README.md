@@ -1,35 +1,41 @@
 # Ambiguity-Aware Cognitive Mapping for Epidemic Medical-Resource Allocation
 
-This repository is the reproducibility package for the manuscript:
+Reproducibility package for the manuscript:
 
-> **Ambiguity-Aware Cognitive Mapping for Epidemic Medical-Resource Allocation: A Coupled Four-Channel Model with Real-Data Validation**
+> **Ambiguity-Aware Cognitive Mapping for Epidemic Medical-Resource Allocation: A Coupled Four-Channel Model with Observational and Real-Stream Evaluation**
 
-It contains the exact Python pipeline, fixed configuration, cached public-data snapshots, processed panels, machine-readable results, graph matrices, and final manuscript figures used in the revised study.
+The package contains the coupled four-channel Ambiguous Cognitive Map (ACM), evidence encoding, temporal calibration, allocation models, statistical analyses, frozen result artifacts, and manuscript figures.
 
-## Scope and interpretation
+## Evaluation scope
 
-The code implements a four-channel Ambiguous Cognitive Map (ACM) with true, false, partially true, and partially false evidence channels. The coupled cognitive scores feed a common linear-programming allocation layer. The repository reproduces:
+| Evaluation | Empirical inputs | Decision layer | Interpretation |
+|---|---|---|---|
+| Synthetic experiments | Simulated epidemic and supply-chain state | Simulated LP allocation | Controlled method comparison and stress testing |
+| NHS ranking | Observed NHS hospital activity | Ranking only | Held-out observational ranking evaluation |
+| HHS ranking | Observed HHS facility reports | Ranking only | External evaluation without recalibration |
+| NHS allocation | Observed demand with simulated inventory, dispatch, supplier, and transport state | Simulated LP allocation | Semi-empirical allocation experiment |
+| GetUsPPE replay | Timestamped requests, offers, and successful deliveries | Retrospective recipient-assignment replay conditional on the logged batch budget | Agreement with historical assignments |
+| PPE-Match replay | Anonymized requests, offers, and donor-recipient distances | Counterfactual weekly matching policies | Operational trade-off evaluation on real streams |
 
-- 30 paired synthetic epidemic-supply-chain runs;
-- channel-count and coupling ablations;
-- convergence, stability, robustness, fairness, and sensitivity analyses;
-- held-out NHS England ranking validation;
-- external HHS ranking validation without recalibration; and
-- a 30-run **semi-empirical** allocation experiment anchored to observed NHS demand.
-
-The public hospital panels do not include complete inventory, dispatch, supplier, and realized transport records. The allocation study must therefore be described as semi-empirical, not as observed real-world allocation outcomes.
+The held-out results are endpoint-dependent. In the GetUsPPE replay, the calibrated scalar and demand baselines agreed more closely with historical recipient assignments than coupled ACM. In PPE-Match, ACM produced service/holding-time and coverage/distance trade-offs, while equal allocation attained the highest prespecified composite score. Coupled and independent four-channel variants were operationally indistinguishable in both replays. The four-channel state therefore serves primarily as an auditable ambiguity representation in these data rather than as evidence of universal operational superiority.
 
 ## Repository layout
 
 ```text
-config/default.json            Fixed paper and quick-test configurations
-data/raw/                      Cached public-data snapshots used in the study
-data/real_world_template.csv   Schema for an optional external panel
-src/acm_revision/              Model, experiments, statistics, and reporting code
-run_all.py                     Synthetic study and manuscript-output pipeline
-run_real_world_study.py        NHS/HHS validation and semi-empirical study
-reproducibility/figures/       Ten final grayscale manuscript figures
-reproducibility/results/       Processed panels, matrices, and result workbooks
+config/default.json                         Synthetic and NHS/HHS settings
+config/real_stream_validation.json          Temporal splits, Optuna spaces, and fixed LP coefficients
+data/raw/                                   Cached NHS/HHS public-data snapshots
+data/README.md                              Data provenance, hashes, and acquisition instructions
+src/acm_revision/                            Models, experiments, statistics, and reporting
+run_all.py                                  Synthetic study pipeline
+run_real_world_study.py                     NHS/HHS and semi-empirical pipeline
+run_retrospective_allocation_v2.py          GetUsPPE retrospective replay
+run_ppe_match_operational_v2.py             PPE-Match operational replay
+validate_v2_outputs.py                      Frozen-output and provenance checks
+scripts/                                    Manuscript-figure generators
+reproducibility/figures/                     Final manuscript figures
+reproducibility/results/real_streams/        Frozen V2 outputs and SHA-256 manifests
+docs/REAL_STREAM_VALIDATION.md               Design and numerical results for the two replays
 ```
 
 ## Installation
@@ -38,61 +44,89 @@ Python 3.11 or newer is recommended.
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate       # Windows: .venv\Scripts\activate
+source .venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-## Reproduce the results
+For the exact environment used to generate the frozen V2 artifacts:
 
-Run a fast installation and pipeline check:
+```bash
+python -m pip install -r requirements-lock.txt
+```
+
+## Reproduce the original pipelines
+
+Fast synthetic installation check:
 
 ```bash
 python run_all.py --profile quick
 ```
 
-Reproduce the synthetic paper results:
+Synthetic paper experiments:
 
 ```bash
 python run_all.py --profile paper --output outputs/paper
 ```
 
-Reproduce the NHS/HHS validation and 30 paired semi-empirical runs:
+NHS/HHS observational evaluation and 30 paired semi-empirical runs:
 
 ```bash
 python run_real_world_study.py --runs 30 --dpi 600 --output outputs/real_world
 ```
 
-The scripts use the cached source snapshots in `data/raw/`. If those files are absent, the real-data loader retrieves the official NHS workbook and the HHS facility series through the documented CMU Delphi mirror.
+The NHS/HHS scripts use the cached source snapshots in `data/raw/`.
 
-Generated outputs are written beneath `outputs/` and include figures, tables, raw per-run metrics, matrices, validation reports, run summaries, and SHA-256 manifests. Figures are grayscale 600-dpi PNG files; the pipeline does not generate PDF figures.
+## Reproduce the real-stream evaluations
 
-## Fixed reproducibility settings
+Acquire the external source files as described in `data/README.md`, then run:
+
+```bash
+python run_retrospective_allocation_v2.py \
+  --data-dir external/ppe_needs_retrospective/data \
+  --trials 36 --bootstrap 5000 --seed 20260718 --dpi 600 \
+  --output outputs/retrospective_allocation_v2
+
+python run_ppe_match_operational_v2.py \
+  --data-dir external/MatchingPPE/data \
+  --trials 28 --bootstrap 5000 --seed 20260718 --dpi 600 \
+  --output outputs/ppe_match_operational_v2
+```
+
+The optimizer uses only calibration data; a shortlist is chosen on internal validation, and the temporal test interval remains untouched until final evaluation. Evidence/Gaussian, memory, coupling, mixing, partial-channel, temperature, and evidence-source parameters are calibrated. The priority, demand, fairness, and lead-time LP coefficients remain fixed at `1.80`, `0.20`, `0.16`, and `0.08`, respectively. Exact spaces and splits are recorded in `config/real_stream_validation.json`; selected configurations and every trial are stored with the frozen outputs.
+
+## Validate frozen artifacts
+
+```bash
+python validate_v2_outputs.py \
+  --actual-output reproducibility/results/real_streams/getusppe \
+  --actual-data external/ppe_needs_retrospective/data \
+  --ppe-output reproducibility/results/real_streams/ppe_match \
+  --ppe-data external/MatchingPPE/data
+```
+
+The validator checks the unique selected trial, calibration-to-validation selection, fixed LP coefficients, contraction bounds, result-table integrity, source-file hashes, and figure dimensions. Each real-stream directory also contains a SHA-256 `MANIFEST.json` for its frozen artifacts.
+
+## Regenerate the integrated manuscript figures
+
+```bash
+python scripts/make_workflow_figure.py
+python scripts/make_real_stream_figure.py
+```
+
+Both scripts read repository-local frozen artifacts and write 600-dpi PNG files to `reproducibility/figures/`.
+
+## Reproducibility settings
 
 - Master seed: `20260718`
 - Synthetic evaluation runs: `30`
 - Semi-empirical paired runs: `30`
 - Simulation horizon: `40` days
-- Paper figure resolution: `600` dpi
-- Synthetic partial-evidence coefficient: selected by the coded calibration routine
-- NHS partial-evidence coefficient: calibrated on the first half of the NHS panel; the second half is retained for evaluation
-- HHS validation: performed without recalibration
+- Bootstrap resamples: `5000`
+- Figure resolution: `600` dpi
+- GetUsPPE TPE trials / validation shortlist: `36 / 8`
+- PPE-Match TPE trials / validation shortlist: `28 / 7`
 
-All remaining settings are recorded in `config/default.json` and in `reproducibility/results/reproducibility_metadata.json`.
+## Citation and license
 
-## Public data provenance
-
-- NHS England, COVID-19 Hospital Activity: <https://www.england.nhs.uk/statistics/statistical-work-areas/covid-19-hospital-activity/>
-- U.S. HHS, COVID-19 Reported Patient Impact and Hospital Capacity by Facility: <https://catalog.data.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-by-facility>
-- CMU Delphi EpiData API, used as the documented HHS retrieval mirror: <https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp_facility.html>
-
-The cached files are included to preserve the exact inputs used for the reported results. Source attribution and any upstream data-use terms remain applicable.
-
-## Citation
-
-Please cite the associated manuscript when using this code or its outputs. Machine-readable citation metadata are provided in `CITATION.cff`.
-
-## License
-
-The software is released under the MIT License. Public source data remain subject to their respective upstream terms and attribution requirements.
-
+Machine-readable citation metadata are provided in `CITATION.cff`. The software is released under the MIT License. Public source data remain subject to their upstream terms and attribution requirements.

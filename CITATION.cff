@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the associated manuscript."
-title: "Ambiguity-Aware Cognitive Mapping for Epidemic Medical-Resource Allocation: A Coupled Four-Channel Model with Real-Data Validation"
+title: "Ambiguity-Aware Cognitive Mapping for Epidemic Medical-Resource Allocation: A Coupled Four-Channel Model with Observational and Real-Stream Evaluation"
 type: software
 authors:
   - family-names: Deif
@@ -9,6 +9,5 @@ authors:
     given-names: Mohammad
 repository-code: "https://github.com/Mohanad-A-Deif/ambiguity-aware-cognitive-mapping"
 license: MIT
-date-released: 2026-07-20
-version: 1.0.0
-
+date-released: 2026-08-15
+version: 1.1.0

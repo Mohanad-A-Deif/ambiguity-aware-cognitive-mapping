@@ -600,7 +600,7 @@ def export_interpretation_guardrails(bundle: ExperimentBundle, output_root: Path
     lines = [
         "# Results interpretation guardrails",
         "",
-        "This file is generated from the current paper-profile outputs. It prevents the revised manuscript from repeating unsupported claims from the previous version.",
+        "This file is generated from the paper-profile outputs and records the interpretation supported by the computed estimates and statistical tests.",
         "",
         "## ACM versus FCM",
         "",

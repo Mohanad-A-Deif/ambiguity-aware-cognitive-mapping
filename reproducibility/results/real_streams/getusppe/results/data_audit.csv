@@ -1,0 +1,30 @@
+item,value
+Request rows retained,13158.0
+Unique acute-care facilities with retained requests,3170.0
+Delivered rows before chronology check,553.0
+Delivered rows excluded: close precedes creation,18.0
+Delivered rows after chronology check,535.0
+n95: request facilities,2822.0
+n95: event batches,116.0
+n95: evaluable batches,84.0
+n95: eligible delivered quantity,39338.0
+surgical_mask: request facilities,2239.0
+surgical_mask: event batches,76.0
+surgical_mask: evaluable batches,63.0
+surgical_mask: eligible delivered quantity,136095.0
+face_shield: request facilities,2249.0
+face_shield: event batches,104.0
+face_shield: evaluable batches,71.0
+face_shield: eligible delivered quantity,135875.0
+gown: request facilities,2182.0
+gown: event batches,53.0
+gown: evaluable batches,46.0
+gown: eligible delivered quantity,59642.0
+Eligible delivered-row coverage,0.822429906542056
+Eligible delivered-quantity coverage,0.7321246713876324
+Request lookback days,90.0
+V2 event batches with a timestamped donor offer,348
+V2 share of event batches with a timestamped donor offer,0.997134670487106
+V2 timestamped offers covering the logged batch,0.9712643678160919
+V2 event batches with donor-state route information,0.9312320916905444
+V2 evaluation budget,logged batch quantity; evidence excludes that quantity

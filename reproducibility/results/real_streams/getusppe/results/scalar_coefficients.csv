@@ -1,0 +1,11 @@
+feature,standardized_coefficient
+Demand pressure,0.20417938094325006
+Backlog pressure,-3.6670554911608657
+Inventory risk,-0.48273305006000367
+Waiting risk,-0.7979559518035957
+Capacity/policy risk,-0.6191529771344939
+Mean source confidence,-0.08549628559523302
+Ambiguity index,0.5660378410497229
+Prior fill,-1.254884588422605
+Route risk,-0.7979559518040483
+Log request cap,1.2029064199902992
